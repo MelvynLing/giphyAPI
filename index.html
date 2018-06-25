@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+            Mel's Cartoon Gif Heaven
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+
+        <!--Bootstrap CDN-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <!--CSS stylesheet for stylistic changes/add ons-->
+        <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Oldenburg" rel="stylesheet">
+
+        
+        <!--jQuery-->
+        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    </head>
+
+<body style="font-family: 'Oldenburg', cursive; background-image: url(./assets/brickwall.jpg)">
+<div class="container">
+    <!--Title Area-->
+    <br>
+    <div id="titleHeader" class="jumbotron text-center bg-dark text-white" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+        <h1>
+        <strong>
+            Mel's Cartoon Gif Heaven
+        </strong>
+        </h1>
+    </div>
+
+    <div class="row">
+            <!--spot for buttons to load-->
+            <div class="col-lg-8" >
+                <div class="card border border-dark text-center">   
+                    <div class="card-body " style=" box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);" id="buttonsArea"></div>
+                </div>
+            </div>
+
+            <!--form/search field-->
+        <div class="col-lg-4">
+            <div class="card border border-dark" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                <div class="card-header bg-dark text-white">
+                    <h4><strong>Search for More Gifs!</strong></h4>
+                </div>
+                <div class="card-body">
+                    <form id="search-form">
+                            <label for= "search-input"> Enter Search Below:</label><br> 
+                            <input type="text" id="search-input" value=" " style="color: lightslategray"> <br>
+                            <br>
+                            <input type="submit" class="btn btn-danger text-white" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);"value="Submit">
+                        </form>
+                    </div>
+            </div>
+        </div> 
+    </div>
+
+    <br>
+
+    <!--spot for gif search results to load-->
+    <div class="row">
+            <div class="col-lg-12">
+                <div class="card border border-dark" style="box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                    <div class="card-header bg-dark text-white">
+                        <h4><strong>Your Gif Search Results</strong></h4>
+                    </div>
+                    <div class="card-body" id="searches"></div>
+                </div>
+            </div>
+    </div>
+    <br>
+</div>
+
+        <!--logic for giphyapi retrieval webpage-->    
+        <script src="./assets/logic.js"></script>
+</body>
+</html>
