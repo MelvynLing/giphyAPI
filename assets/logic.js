@@ -1,9 +1,13 @@
 $(function(){
     populateButtons(searchArray,'searchButton','#buttonsArea')
+    ///DEBUGGING
+    console.log("1")
     
 })
 
 var searchArray = ['Simpsons','South Park','Rick and Morty','Family Guy','Adventure Time','Sponge Bob Square Pants','King of the Hill','Aqua Teen Hunger Force','The Ren & Stimpy Show','Futurama','Looney Tunes','Tom and Jerry','Beavis and Butthead',]
+///DEBUGGING
+console.log("111")
 
 function populateButtons(searchArray,classToAdd,areaToAddTo){
     $(areaToAddTo).empty();
@@ -13,6 +17,8 @@ function populateButtons(searchArray,classToAdd,areaToAddTo){
         a.attr('data-type',searchArray[i]);
         a.text(searchArray[i]);
         $(areaToAddTo).append(a);
+///DEBUGGING
+        console.log("1111")
     }
 }
 
@@ -37,6 +43,7 @@ $(document).on('click','.searchButton',function(){
                         searchDiv.append(p);
                         searchDiv.append(image);
                             $('#searches').append(searchDiv);
+                            console.log("11111")
             }
         })
 })
@@ -49,11 +56,15 @@ $(document).on('click','.searchImage',function() {
     } else {
         $(this).attr('src',$(this).data('still'));
         $(this).attr('data-state','still');
+        ///DEBUGGING
+        console.log("111111")
     }    
 })
 
-$('#addSearch').on('click', function(){
-    var newSearch = $('input').eq(0).val();
+$("#addSearch").on('click', function(){
+    var newSearch = $('#search-input').val();
+    ///DEBUGGING
+    console.log("hi");
     searchArray.push(newSearch);
     populateButtons(searchArray,'searchButton','#buttonsArea');
     return false;
