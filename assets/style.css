@@ -1,0 +1,25 @@
+@media screen and (max-width: 991px) {
+    #search-input {
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #search-input {
+        width: 110px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #search-input {
+        width: 300px;
+    }
+    #search-card {
+        margin-top: 25px;
+    }
+}
+@media screen and (max-width: 320px) {
+    #search-input {
+        width: 250px;
+    }
+}
