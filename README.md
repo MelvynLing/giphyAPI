@@ -36,8 +36,9 @@ the search input works as follows:
   >![](assets/giphy1.png)
   > * type in the desired gif search in search input area.
   > * Once typed, hit submit. This should return the desired search results  as a button in the button area.
+  >![](assets/giphy4.png)
   > * once the button shows, click on it and the gifs will load below in the search result area. 
-  >![](assets/giphy7.jpg)
+  >![](assets/giphy2.png)
   > * once loaded, the user can click on the gif to play it and then click on it to pause it as well. 
 
 
