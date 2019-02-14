@@ -1,10 +1,10 @@
-# giphyAPI
+# Mel's Cartoon Gif Heaven -- giphyAPI
 ------
 ## live app: https://melvynling.github.io/giphyAPI/
 ![](assets/giphy.png)
 
 ## Objective
-The point of this app is to allow the user to search the giphy database of gifs for gif of their choosing, and  
+The point of this app is to allow the user to search the giphy database of gifs for gif of their choosing. It presents the user with cartoon gif presets, which they can add to via an Ajax API call. 
 
 
 Keywords:
@@ -26,20 +26,21 @@ The area beneath the buttons and search area present the user with the gifs they
 as the page loads, the user is presented with a series of buttons to choose cartoon themed gifs onthe left as well as a search input to search gifs on the right. Below these is an area where the selected or searched gifs can load. 
 
 the buttons work as follows: 
-  >![](assets/giphy5.png)
+
   > * click on a button to select one of the preset cartoon themes. 
+    >![](assets/giphy5.png)
   > * once clicked, the gifs will load below in the search result area. 
-  >![](assets/giphy3.png)
   > * once loaded, the user can click on the gif to play it and then click on it to pause it as well. 
+    >![](assets/giphy3.png)
 
 the search input works as follows:
-  >![](assets/giphy1.png)
   > * type in the desired gif search in search input area.
+   >![](assets/giphy1.png)
   > * Once typed, hit submit. This should return the desired search results  as a button in the button area.
-  >![](assets/giphy4.png)
   > * once the button shows, click on it and the gifs will load below in the search result area. 
-  >![](assets/giphy2.png)
+  >![](assets/giphy4.png)
   > * once loaded, the user can click on the gif to play it and then click on it to pause it as well. 
+  >![](assets/giphy2.png)
 
 
 

@@ -1,3 +1,8 @@
+.search-item p {
+    margin-top:45px;
+}
+
+
 @media screen and (max-width: 991px) {
     #search-input {
         width: 150px;
